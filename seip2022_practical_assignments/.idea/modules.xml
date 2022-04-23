@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/gradeshistogram.iml" filepath="$PROJECT_DIR$/gradeshistogram.iml" />
-      <module fileurl="file://$PROJECT_DIR$/seip2022_practical_assignments.iml" filepath="$PROJECT_DIR$/seip2022_practical_assignments.iml" />
-    </modules>
-  </component>
-</project>
