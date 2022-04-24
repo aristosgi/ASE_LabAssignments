@@ -59,45 +59,50 @@ public class HistogramGenerator {
         boolean urls = false; // do not visualize urls
 
         // Declare and initialize a createXYLineChart JFreeChart
-        JFreeChart chart = ChartFactory.createXYLineChart("Chart title", "x_axis title", "y_axis_title", dataset,
+        JFreeChart chart = ChartFactory.createXYLineChart("Grades Frequency", "Grades", "Frequency", dataset,
                 PlotOrientation.VERTICAL, legend, tooltips, urls);
 
         /*
          * Initialize a frame for visualizing the chart and attach the
          * previously created chart.
          */
-        ChartFrame frame = new ChartFrame("First", chart);
+        ChartFrame frame = new ChartFrame("Grades Chart", chart);
         frame.pack();
         // makes the previously created frame visible
         frame.setVisible(true);
     }
 
     public void ConvertToFrequency(ArrayList<Integer> grades) {
+        /*
+         * Convert the arraylist with the grades to a table
+         * with the frequency of every grade
+         */
         int[] data = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0 , 0};
+
         for (int i = 0; i < grades.size(); i++) {
             int place = grades.get(i);
             data[place] = data[place] + 1;
         }
+        //call the generator
         HistogramGenerator demo = new HistogramGenerator();
         demo.HistogramGenerator(data);
     }
 
 
     public static void main(String[] args) throws FileNotFoundException {
-        // the input values
+        // read the input values
         ArrayList<Integer> dataValues = new ArrayList<>();
+
         try {
             File grades = new File(args[0]);
             Scanner sc = new Scanner(grades);
-            int i = 0;
             while (sc.hasNext()) {
                 dataValues.add(sc.nextInt());
-
             }
             HistogramGenerator demo = new HistogramGenerator();
             demo.ConvertToFrequency(dataValues);
         } catch (Exception e){
-            System.out.print(e.getMessage());
+            e.getStackTrace();
         }
     }
 }
