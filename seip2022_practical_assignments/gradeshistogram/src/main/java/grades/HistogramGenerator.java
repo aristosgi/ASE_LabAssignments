@@ -19,6 +19,7 @@ import java.util.Scanner;
  *         scenario of a JFreeChart XYLine chart.
  * @since May 2019
  */
+
 public class HistogramGenerator {
 
     /***
@@ -29,6 +30,7 @@ public class HistogramGenerator {
      *
      * @param dataValues Single dimension integer array
      */
+
     public void HistogramGenerator(int[] dataValues) {
         /*
          * The XYSeriesCollection object is a set XYSeries series (dataset) that

@@ -7,6 +7,8 @@
     <groupId>gr.aueb.dmst.aristosgi</groupId>
     <artifactId>gradeshistogram</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <name>Histogram project</name>
+    <description>A simple java project which take as argument a txt file with grades from 0 - 10 and create a chart with the frequency of the grades</description>
 
     <properties>
         <maven.compiler.source>14</maven.compiler.source>

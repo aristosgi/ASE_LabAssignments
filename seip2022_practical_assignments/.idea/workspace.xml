@@ -51,6 +51,11 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gradeshistogram/src/main/resources" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.grades.HistogramGenerator">
     <configuration name="HistogramGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HistogramGenerator" />
@@ -103,7 +108,7 @@
       <updated>1650649293434</updated>
       <workItem from="1650649295620" duration="4221000" />
       <workItem from="1650710670475" duration="6960000" />
-      <workItem from="1650718151006" duration="962000" />
+      <workItem from="1650718151006" duration="3056000" />
     </task>
     <servers />
   </component>
