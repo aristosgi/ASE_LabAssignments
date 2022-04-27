@@ -18,7 +18,7 @@ import java.util.Scanner;
  * @author aristosgi
  *
  */
-git
+
 public class HistogramGenerator {
 
     /***
