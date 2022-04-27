@@ -15,11 +15,10 @@ import java.util.Scanner;
 
 /***
  *
- * @author agkortzis The purpose of this class is to demonstrate a simple
- *         scenario of a JFreeChart XYLine chart.
- * @since May 2019
+ * @author aristosgi
+ *
  */
-
+git
 public class HistogramGenerator {
 
     /***
