@@ -12,11 +12,11 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
 /***
  *
  * @author aristosgiThe purpose of this class is to demonstrate a simple
- *         scenario of a representing a list of grades from 1-10 to a chart eith frequencies.
+ *         scenario of a representing a list of grades from 1-10 to a chart eith
+ *         frequencies.
  * @since April 2022
  *
  */
@@ -49,7 +49,7 @@ public class HistogramGenerator {
          * values.
          */
         for (int i = 0; i < dataValues.length; i++) {
-            data.add(i , dataValues[i]);
+            data.add(i, dataValues[i]);
         }
 
         // add the series to the dataset
@@ -78,33 +78,42 @@ public class HistogramGenerator {
          * Convert the arraylist with the grades to a table
          * with the frequency of every grade
          */
-        int[] data = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0 , 0};
-
+        int[] data = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        // match every grade to the data table
         for (int i = 0; i < grades.size(); i++) {
             int place = grades.get(i);
             data[place] = data[place] + 1;
         }
-        //call the generator
+        // create HistogramGenerator object
         HistogramGenerator demo = new HistogramGenerator();
+        // call the generator
         demo.chartGenerator(data);
     }
 
-
     public static void main(String[] args) throws FileNotFoundException {
+        /*
+         * main method which reads the txt file
+         * and create an array list with the values
+         */
+
         // read the input values
         ArrayList<Integer> dataValues = new ArrayList<>();
-
+        // try to open the txt file
         try {
             File grades = new File(args[0]);
+            // open the Scanner
             Scanner sc = new Scanner(grades);
             while (sc.hasNext()) {
+                // add every grade to the arraylist
                 dataValues.add(sc.nextInt());
             }
+            // create HistogramGenerator object
             HistogramGenerator demo = new HistogramGenerator();
             demo.ConvertToFrequency(dataValues);
+            // close the scanner
             sc.close();
-        } catch (Exception e){
-            System.out.println(e);
+        } catch (Exception e) {
+            e.getStackTrace();
         }
 
     }
