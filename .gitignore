@@ -39,5 +39,6 @@ hs_err_pid*
 
 # extra
 .DS_Store
+
 .vscode/
 
