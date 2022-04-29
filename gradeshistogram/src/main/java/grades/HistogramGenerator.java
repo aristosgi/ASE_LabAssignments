@@ -15,7 +15,9 @@ import java.util.Scanner;
 
 /***
  *
- * @author aristosgi
+ * @author aristosgiThe purpose of this class is to demonstrate a simple
+ *         scenario of a representing a list of grades from 1-10 to a chart eith frequencies.
+ * @since April 2022
  *
  */
 
@@ -30,7 +32,7 @@ public class HistogramGenerator {
      * @param dataValues Single dimension integer array
      */
 
-    public void HistogramGenerator(int[] dataValues) {
+    public void chartGenerator(int[] dataValues) {
         /*
          * The XYSeriesCollection object is a set XYSeries series (dataset) that
          * can be visualized in the same chart
@@ -84,7 +86,7 @@ public class HistogramGenerator {
         }
         //call the generator
         HistogramGenerator demo = new HistogramGenerator();
-        demo.HistogramGenerator(data);
+        demo.chartGenerator(data);
     }
 
 
@@ -100,8 +102,10 @@ public class HistogramGenerator {
             }
             HistogramGenerator demo = new HistogramGenerator();
             demo.ConvertToFrequency(dataValues);
+            sc.close();
         } catch (Exception e){
-            e.getStackTrace();
+            System.out.println(e);
         }
+
     }
 }
