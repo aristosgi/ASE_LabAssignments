@@ -77,6 +77,7 @@ public class HistogramGenerator {
         /*
          * Convert the arraylist with the grades to a table
          * with the frequency of every grade
+         * @param data Single dimension integer array
          */
         int[] data = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         // match every grade to the data table
@@ -99,6 +100,7 @@ public class HistogramGenerator {
         // read the input values
         ArrayList<Integer> dataValues = new ArrayList<>();
         // try to open the txt file
+        //@param dataValues arraylist with integers
         try {
             File grades = new File(args[0]);
             // open the Scanner
