@@ -3,17 +3,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+	<parent>
+		<groupId>gr.aueb.dmst.aristosgi</groupId>
+		<artifactId>seip2022_practical_assignments</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
 
-    <groupId>gr.aueb.dmst.aristosgi</groupId>
-    <artifactId>gradeshistogram</artifactId>
-    <version>1.0-SNAPSHOT</version>
+	<artifactId>gradeshistogram</artifactId>
     <name>Histogram project</name>
     <description>A simple java project which take as argument a txt file with grades from 0 - 10 and create a chart with the frequency of the grades</description>
-
-    <properties>
-        <maven.compiler.source>14</maven.compiler.source>
-        <maven.compiler.target>14</maven.compiler.target>
-    </properties>
 
         <!-- https://mvnrepository.com/artifact/org.jfree/jfreechart -->
     <dependencies>
