@@ -81,9 +81,9 @@ public class HistogramGenerator {
          */
         int[] data = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
         // match every grade to the data table
-        for (int i = 0; i < grades.size(); i++) {
-            int place = grades.get(i);
-            data[place] = data[place] + 1;
+        for (int i = 0; i < grades.size(); i++) { //for every grade
+            int place = grades.get(i); //the place of the grade
+            data[place] = data[place] + 1; //add to the frequency table
         }
         // create HistogramGenerator object
         HistogramGenerator demo = new HistogramGenerator();
