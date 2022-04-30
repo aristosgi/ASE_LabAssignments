@@ -14,8 +14,8 @@ import java.util.Scanner;
 
 /***
  *
- * @author aristosgiThe purpose of this class is to demonstrate a simple
- *         scenario of a representing a list of grades from 1-10 to a chart eith
+ * @author aristosgi The purpose of this class is to demonstrate a simple
+ *         scenario of a representing a list of grades from 1-10 to a chart with
  *         frequencies.
  * @since April 2022
  *
@@ -73,17 +73,21 @@ public class HistogramGenerator {
         frame.setVisible(true);
     }
 
-    public void ConvertToFrequency(ArrayList<Integer> grades) {
-        /*
-         * Convert the arraylist with the grades to a table
-         * with the frequency of every grade
-         * @param data Single dimension integer array
-         */
+    /*
+     * Convert the arraylist with the grades to a table
+     * with the frequency of every grade
+     * 
+     * @param  @param data Single dimension integer array with the frequency of each grade
+     */
+
+    public void convertGrades(ArrayList<Integer> grades) {
+
         int[] data = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
         // match every grade to the data table
-        for (int i = 0; i < grades.size(); i++) { //for every grade
-            int place = grades.get(i); //the place of the grade
-            data[place] = data[place] + 1; //add to the frequency table
+        for (int i = 0; i < grades.size(); i++) { // for every grade
+            int place = grades.get(i); // the place of the grade
+            data[place] = data[place] + 1; // add to the frequency table
         }
         // create HistogramGenerator object
         HistogramGenerator demo = new HistogramGenerator();
@@ -91,18 +95,25 @@ public class HistogramGenerator {
         demo.chartGenerator(data);
     }
 
-    public static void main(String[] args) throws FileNotFoundException {
         /*
          * main method which reads the txt file
          * and create an array list with the values
+         * @param dataValues arraylist with integers
+         * @param path the path of the txt file
+         * @param grades the txt file
          */
+
+    public static void main(String[] args) throws FileNotFoundException {
+        
 
         // read the input values
         ArrayList<Integer> dataValues = new ArrayList<>();
         // try to open the txt file
-        //@param dataValues arraylist with integers
+        
+
         try {
-            File grades = new File(args[0]);
+            String path = args[0];
+            File grades = new File(path);
             // open the Scanner
             Scanner sc = new Scanner(grades);
             while (sc.hasNext()) {
@@ -111,7 +122,7 @@ public class HistogramGenerator {
             }
             // create HistogramGenerator object
             HistogramGenerator demo = new HistogramGenerator();
-            demo.ConvertToFrequency(dataValues);
+            demo.convertGrades(dataValues);
             // close the scanner
             sc.close();
         } catch (Exception e) {
