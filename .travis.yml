@@ -1,14 +1,14 @@
  
 language: java # Define the language
 jdk: # Define the execution environments - openjdk11
-- openjdk17
+ - openjdk17
 branches: # Execute job only on specific branch commits only:
-  - development
+ - development
 before_script: - ls -la
 script:
-- mvn clean package
+ - mvn clean package
 # Enter Maven root directory
 # List all directory contents
 # Build the project
 after_success:
-- echo “Process terminated successfully”
+ - echo “Process terminated successfully”
