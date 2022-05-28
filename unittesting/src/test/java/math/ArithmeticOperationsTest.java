@@ -70,7 +70,7 @@ public class ArithmeticOperationsTest {
 		// With @Rules you can perform more sophisticated checks
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("x & y should be >= 0");
-		ao.multiply(5, -1);
+		ao.multiply(5, -2);
 		
 	}
 

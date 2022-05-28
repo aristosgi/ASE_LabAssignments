@@ -12,3 +12,5 @@ script:
 # Build the project
 after_success:
  - echo “Process terminated successfully”
+
+
