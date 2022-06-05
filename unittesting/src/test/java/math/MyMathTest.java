@@ -3,6 +3,7 @@ package math;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
+import org.junit.Assert;
 
 public class MyMathTest {
     /*
@@ -16,7 +17,7 @@ public class MyMathTest {
     public ExpectedException thrown = ExpectedException.none(); // initialize it to .none()
 
     @Test
-    public void testAddShouldThrowExceptionOnNegativeInput() {
+    public void testAddShouldThrowExceptionOnInputOutOfRange() {
         // With @Rules you can perform more sophisticated checks
         thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("Number should be between 0 and 12");
@@ -27,11 +28,31 @@ public class MyMathTest {
     public ExpectedException thrown1 = ExpectedException.none(); // initialize it to .none()
 
     @Test
-    public void testAddShouldThrowExceptionOnPositiveInput() {
+    public void testAddShouldThrowExceptionInvalidInput() {
         // With @Rules you can perform more sophisticated checks
         thrown1.expect(IllegalArgumentException.class);
 		thrown1.expectMessage("Number should be between 0 and 12");
         mm.factorial(20);
+    }
+
+
+	@Test 
+	public void testAddShouldThrowExceptionInputSmallerThan2() {
+		// With @Rules you can perform more sophisticated checks
+		thrown.expect(IllegalArgumentException.class);
+		thrown.expectMessage("Number should ne >2");
+		mm.isPrime(-1);
+		
+	}
+
+    @Test
+    public void testIsPrimeValid() {
+    	Assert.assertEquals(true , mm.isPrime(5));
+    }
+
+    @Test
+    public void testIsPrimeInvalid() {
+    	Assert.assertEquals(false , mm.isPrime(4));
     }
 
 }

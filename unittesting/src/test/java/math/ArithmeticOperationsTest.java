@@ -66,7 +66,7 @@ public class ArithmeticOperationsTest {
 	@Rule 
 	public ExpectedException thrown = ExpectedException.none(); //initialize it to .none()
 	@Test 
-	public void testAddShouldThrowExceptionOnPositiveInput() {
+	public void testAddShouldThrowExceptionOnValuesOutOfRange() {
 		// With @Rules you can perform more sophisticated checks
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("x & y should be >= 0");

@@ -29,7 +29,7 @@ public class MyMathParametrizedTest {
     }
 
     @Test
-    public void test_Factorial(){
+    public void testFactorial(){
         Assert.assertEquals(result , mm.factorial(fact));
     }
     
