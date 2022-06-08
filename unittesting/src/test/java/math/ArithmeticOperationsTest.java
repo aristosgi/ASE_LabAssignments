@@ -22,23 +22,15 @@ public class ArithmeticOperationsTest {
      * that causes an IllegalArgumentException
      */
     @Test(expected = ArithmeticException.class)
-    public void testGetSignShouldCauseAnException() {
+    public void testDeminatorZeroCauseAnException() {
         ao.divide(5, 0);
-    }
-
-    /*
-	 * A unit test that checks a valid positive input
-	 */
-    @Test
-    public void testGetSignShouldReturnRegularOutputPositive() {
-    	Assert.assertEquals(3 , ao.divide(3 , 1) , 0.001);
     }
 
     /*
 	 * A unit test that checks a valid negative input
 	 */
     @Test
-    public void testGetSignShouldReturnRegularOutput() {
+    public void testShouldReturnRegularOutput() {
     	Assert.assertEquals(3 , ao.divide(3 , 1) , 0.001);
     }
 
@@ -46,7 +38,7 @@ public class ArithmeticOperationsTest {
 	 * A unit test that checks a valid input zero
 	 */
     @Test
-    public void testGetSignShouldReturnNormalOutputNegativeNumerator() {
+    public void testShouldReturnNormalOutputNegativeNumerator() {
     	Assert.assertEquals(-3 , ao.divide(-3 , 1) , 0.001);
     }
 
@@ -54,7 +46,7 @@ public class ArithmeticOperationsTest {
 	 * A unit test that checks a valid negative numerator and deminator input
 	 */
     @Test
-    public void testGetSignShouldReturnNormalOutputNegativeBothNumerator() {
+    public void testShouldReturnNormalOutputNegativeBothNumerator() {
     	Assert.assertEquals(3 , ao.divide(-3 , -1) , 0.001);
     }
 
@@ -66,7 +58,7 @@ public class ArithmeticOperationsTest {
 	@Rule 
 	public ExpectedException thrown = ExpectedException.none(); //initialize it to .none()
 	@Test 
-	public void testAddShouldThrowExceptionOnValuesOutOfRange() {
+	public void testShouldThrowExceptionOnValuesOutOfRange() {
 		// With @Rules you can perform more sophisticated checks
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("x & y should be >= 0");
