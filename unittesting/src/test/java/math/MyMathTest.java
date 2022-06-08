@@ -40,7 +40,7 @@ public class MyMathTest {
 	public void testAddShouldThrowExceptionInputSmallerThan2() {
 		// With @Rules you can perform more sophisticated checks
 		thrown.expect(IllegalArgumentException.class);
-		thrown.expectMessage("Number should ne >2");
+		thrown.expectMessage("Number should be >2");
 		mm.isPrime(-1);
 		
 	}

@@ -42,6 +42,11 @@ public class ArithmeticOperationsTest {
     	Assert.assertEquals(-3 , ao.divide(-3 , 1) , 0.001);
     }
 
+    @Test
+    public void testShouldReturnNormalOutputNegativeDeminator() {
+    	Assert.assertEquals(-3 , ao.divide(3 , -1) , 0.001);
+    }
+
     /*
 	 * A unit test that checks a valid negative numerator and deminator input
 	 */
@@ -66,6 +71,22 @@ public class ArithmeticOperationsTest {
 		
 	}
 
+    @Test
+	public void testShouldReturnNormalValuesXLowerFromIntegerMaxValueY() {
+		// With @Rules you can perform more sophisticated checks
+		
+		Assert.assertEquals(5 , ao.multiply(5,1));
+	}
+    @Rule 
+	public ExpectedException thrown1 = ExpectedException.none(); //initialize it to .none()
+    @Test 
+	public void testShouldThrowExceptionOnInvalidValue() {
+		// With @Rules you can perform more sophisticated checks
+		thrown1.expect(IllegalArgumentException.class);
+		thrown1.expectMessage("The product does not fit in an Integer variable");
+		ao.multiply(1000000000,1000000000);
+		
+    }
 
 
 }
