@@ -1,4 +1,5 @@
 
+[![Build Status](https://app.travis-ci.com/aristosgi/lab_assignments.svg?token=MuRSqKwayNEsF35Wnjhn&branch=development)](https://app.travis-ci.com/aristosgi/lab_assignments)
 
  Java project which reads txt file and creat a chart with the frequencies
 
