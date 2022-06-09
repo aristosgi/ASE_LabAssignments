@@ -71,6 +71,15 @@ public class ArithmeticOperationsTest {
 		
 	}
 
+	@Test 
+	public void testShouldThrowExceptionOnOneBothValuesOutOfRange() {
+		// With @Rules you can perform more sophisticated checks
+		thrown.expect(IllegalArgumentException.class);
+		thrown.expectMessage("x & y should be >= 0");
+		ao.multiply(-5, -2);
+		
+	}
+
     @Test
 	public void testShouldReturnNormalValuesXLowerFromIntegerMaxValueY() {
 		// With @Rules you can perform more sophisticated checks
