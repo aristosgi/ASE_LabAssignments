@@ -7,4 +7,4 @@
   java -jar gradeshistogram/target/gradeshistogram-1.0-SNAPSHOT-jar-with-dependencies.jar <txt file path
 
 
-  To see the unit tests click [here](unittesting/README.md)                                                                            
+  To see the unit tests click [here](unittest/README.md)                                                                            
