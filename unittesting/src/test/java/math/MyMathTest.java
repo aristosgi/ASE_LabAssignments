@@ -17,7 +17,7 @@ public class MyMathTest {
     public ExpectedException thrown = ExpectedException.none(); // initialize it to .none()
 
     @Test
-    public void testAddShouldThrowExceptionOnInputOutOfRange() {
+    public void testShouldThrowExceptionOnInputOutOfRange() {
         // With @Rules you can perform more sophisticated checks
         thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("Number should be between 0 and 12");
@@ -28,7 +28,7 @@ public class MyMathTest {
     public ExpectedException thrown1 = ExpectedException.none(); // initialize it to .none()
 
     @Test
-    public void testAddShouldThrowExceptionInvalidInput() {
+    public void testShouldThrowExceptionInvalidInput() {
         // With @Rules you can perform more sophisticated checks
         thrown1.expect(IllegalArgumentException.class);
 		thrown1.expectMessage("Number should be between 0 and 12");
@@ -37,7 +37,7 @@ public class MyMathTest {
 
 
 	@Test 
-	public void testAddShouldThrowExceptionInputSmallerThan2() {
+	public void testShouldThrowExceptionInputSmallerThan2() {
 		// With @Rules you can perform more sophisticated checks
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("Number should be >2");
