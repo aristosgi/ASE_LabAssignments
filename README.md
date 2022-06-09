@@ -7,4 +7,4 @@
 
   java -jar gradeshistogram/target/gradeshistogram-1.0-SNAPSHOT-jar-with-dependencies.jar <txt file path
 
-* [gradeshistogram](#grades-histogram)
+* [unittest](#unit-test)
