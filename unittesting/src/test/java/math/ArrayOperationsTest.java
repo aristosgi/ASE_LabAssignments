@@ -7,8 +7,7 @@ import static org.mockito.Mockito.*;
 
 public class ArrayOperationsTest {
     ArrayOperations ao = new ArrayOperations();
-
-
+    
     @Test
     public void testPrimeNumbers() {
         String resource = "src/test/resources/test_mock.txt";
