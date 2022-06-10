@@ -86,6 +86,31 @@ public class ArithmeticOperationsTest {
 		
 		Assert.assertEquals(5 , ao.multiply(5,1));
 	}
+
+
+	@Test
+	public void testShouldReturnNormalValuesFirstOfTwoInputIsZero() {
+		// With @Rules you can perform more sophisticated checks
+		
+		Assert.assertEquals(0, ao.multiply(0,1));
+	}
+	@Rule 
+	public ExpectedException thrown2 = ExpectedException.none(); //initialize it to .none()
+	@Test
+	public void testShouldReturnNormalValuesFromOBothInputsInputIsZero() {
+		// With @Rules you can perform more sophisticated checks
+		thrown2.expect(ArithmeticException.class);
+		ao.multiply(0,0);
+	}
+
+	@Test
+	public void testShouldReturnNormalValuesSecondInputInputIsZero() {
+		// With @Rules you can perform more sophisticated checks
+		thrown2.expect(ArithmeticException.class);
+		ao.multiply(3,0);
+	}
+
+
     @Rule 
 	public ExpectedException thrown1 = ExpectedException.none(); //initialize it to .none()
     @Test 

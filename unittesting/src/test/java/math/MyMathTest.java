@@ -24,6 +24,13 @@ public class MyMathTest {
 
         mm.factorial(-20);
     }
+
+    @Test
+    public void testNormalOutputOnInputZero() {
+
+        Assert.assertEquals(1 ,mm.factorial(0));
+    }
+
     @Rule
     public ExpectedException thrown1 = ExpectedException.none(); // initialize it to .none()
 
@@ -42,6 +49,15 @@ public class MyMathTest {
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("Number should be >2");
 		mm.isPrime(-1);
+		
+	}
+
+    @Test 
+	public void testShouldThrowExceptionInputZero() {
+		// With @Rules you can perform more sophisticated checks
+		thrown.expect(IllegalArgumentException.class);
+		thrown.expectMessage("Number should be >2");
+		mm.isPrime(0);
 		
 	}
 
