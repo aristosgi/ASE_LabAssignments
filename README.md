@@ -7,3 +7,9 @@ A repository to deliver the lab assignments of the Applied Software Engineering 
 * [seip2022_practical_assignments](#parent)
 * [gradeshistogram](#grades-histogram)
 * [unittesting](#unit-testing)
+
+
+## <a name="grades-histogram"></a>gradeshistogram
+
+This maven project is the module project and has [ase2021_practical_assignments](#parent) as a parent project.
+It contains a class that takes a grades file as input and prooduces a histogram with the frequencies of the grades.
