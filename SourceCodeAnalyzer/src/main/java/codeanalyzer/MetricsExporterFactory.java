@@ -22,7 +22,7 @@ public class MetricsExporterFactory {
 		} else {
 			exp = new NullExporter();
 		}
-		return exporter;
+		return exp;
 	}
 
 }
