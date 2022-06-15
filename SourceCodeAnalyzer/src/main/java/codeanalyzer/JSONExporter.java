@@ -1,3 +1,5 @@
+package codeanalyzer;
+
 public class JSONExporter {
 
     private void writeJson(Map<String, Integer> metrics, String filepath) {
