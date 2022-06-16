@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
  */
 
 public class StrCompSourceCodeAnalyzer {
-    public int calculateNOMStrComp(String filepath, String analyzerType) throws IOException {
+    public int calculateNOM(String filepath, String analyzerType) throws IOException {
 		
 			List<String> sourceCodeList = fileReader.readFileIntoList(filepath);
 			int methodCounter = 0;
@@ -28,7 +28,7 @@ public class StrCompSourceCodeAnalyzer {
 					methodCounter++;
 			}
     
-    public int calculateNOCStrComp(String filepath, String analyzerType) throws IOException {
+    public int calculateNOC(String filepath, String analyzerType) throws IOException {
     
             List<String> sourceCodeList = fileReader.readFileIntoList(filepath);
             int classCounter = 0;
@@ -39,7 +39,7 @@ public class StrCompSourceCodeAnalyzer {
                 }
             }
 
-    public int calculateLOCStrComp(String filepath, String analyzerType) throws IOException {
+    public int calculateLOC(String filepath, String analyzerType) throws IOException {
 
             List<String> sourceCodeList = fileReader.readFileIntoList(filepath);
             int nonCodeLinesCounter = 0;

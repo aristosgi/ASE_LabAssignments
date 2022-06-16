@@ -17,7 +17,7 @@ import java.util.regex.Pattern;
 
 public class RegexSourceCodeAnalyzer {
     
-    public int calculateLOCRegex(String filepath, String analyzerType) throws IOException {
+    public int calculateLOC(String filepath, String analyzerType) throws IOException {
 		
 			String sourceCode = fileReader.readFileIntoString(filepath);
 			Pattern pattern = Pattern.compile("((//.*)|(/\\*.*)|(\\*+.*))");
@@ -33,7 +33,7 @@ public class RegexSourceCodeAnalyzer {
 	        
 			return loc;
 }
-    public int calculateNOMRegex(String filepath, String analyzerType) throws IOException {
+    public int calculateNOM(String filepath, String analyzerType) throws IOException {
    
         String sourceCode = fileReader.readFileIntoString(filepath);
         Pattern pattern = Pattern.compile(".*(public |protected |private |static )?[\\w\\<\\>\\[\\]]+\\s+(\\w+) *\\([^\\)]*\\) *(\\{?|[^;]).*"); 
@@ -45,7 +45,7 @@ public class RegexSourceCodeAnalyzer {
         }
         return methodCounter;
 }
-public int calculateNOCRegex(String filepath, String analyzerType) throws IOException {
+public int calculateNOC(String filepath, String analyzerType) throws IOException {
 
         String sourceCode = fileReader.readFileIntoString(filepath);
         Pattern pattern = Pattern.compile(".*\\s*class\\s+.*"); 
