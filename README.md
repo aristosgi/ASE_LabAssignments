@@ -22,5 +22,4 @@ It contains a class that takes a grades file as input and prooduces a histogram 
 This maven project is created for the purposes of the third lab assignment and 
 the objective is to practice unit testing. You can find details [here](unittesting/README.md).
 
-
-  To see the unit tests click [here](unittest/README.md)                                                                            
+                                                                     
