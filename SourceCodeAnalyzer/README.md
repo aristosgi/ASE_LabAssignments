@@ -36,22 +36,22 @@ Used on : ```MetricsExporterFactory``` , ```SourceCodeAnalyzerFactory```
 - (+) Flexibility: We can extend Product hierarchy without affecting clients.
 - (-) GoF Abstract Factory only covers object creation
 
--**Strategy**
+#### **Strategy**
 
 The Strategy pattern lets you indirectly alter the object's behavior at runtime by associating it with different sub-objects which can perform specific sub-tasks in different ways. Use the Strategy when you have a lot of similar classes that only differ in the way they execute some behavior
 
 Used on : ```SourceCodeAnalyzer```
 
--(+) Freedom to choose algorithms
--(+) Easier extensibility
--(+) Concrete objects, such as, ```CVSExporter``` and ```JSONExporter``` are now interchangeable
+- (+) Freedom to choose algorithms
+- (+) Easier extensibility
+- (+) Concrete objects, such as, ```CVSExporter``` and ```JSONExporter``` are now interchangeable
 
--**Facade**
+#### **Facade**
 
 It shields the clients from the complexities of the sub-system components. It promotes loose coupling between subsystems and its clients 
 
 Used on : ```SourceCodeAnalyzerFacade```
 
--(+) Provides a simple interface to a complex system.
--(+) De-couples the subsystem for clients and othersubsystems, thereby promoting subsystem independence and portability.
--(+) Layers the subsystem.
+- (+) Provides a simple interface to a complex system.
+- (+) De-couples the subsystem for clients and othersubsystems, thereby promoting subsystem independence and portability.
+- (+) Layers the subsystem.
