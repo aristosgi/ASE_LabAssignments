@@ -26,15 +26,15 @@ example:
 
 # Used patterns
 
--**Factory**
+####**Factory**
 
 Factory Method Pattern allows the sub-classes to choose the type of objects to create. It promotes the loose-coupling by eliminating the need to bind application-specific classes into the code
 
 Used on : ```MetricsExporterFactory``` , ```SourceCodeAnalyzerFactory```
 
--(+) Separation of concerns: The logic to instantiate classes is separated.
--(+) Flexibility: We can extend Product hierarchy without affecting clients.
--(-) GoF Abstract Factory only covers object creation
+- (+) Separation of concerns: The logic to instantiate classes is separated.
+- (+) Flexibility: We can extend Product hierarchy without affecting clients.
+- (-) GoF Abstract Factory only covers object creation
 
 -**Strategy**
 
