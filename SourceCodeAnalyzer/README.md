@@ -1,11 +1,15 @@
 # Refactored source code analyzer
+
 This is the refactored version of the Source Code Analyzer system. The following sections present the Class Diagram of the system and the design patterns used in order to satisfy specific design decisions and requirements.
 
 ## Module design
+
 The following class diagram visualizes the refactored source code analyzer. 
+
 ![](assignment.png)
 
-# Build and execute the project and
+# Build and execute the project
+
 1. Build the executable Java application with: 
 	mvn package jacoco:report
 
