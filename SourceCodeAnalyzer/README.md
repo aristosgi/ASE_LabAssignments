@@ -35,4 +35,5 @@ Factory Method Pattern allows the sub-classes to choose the type of objects to c
 The Strategy pattern lets you indirectly alter the object's behavior at runtime by associating it with different sub-objects which can perform specific sub-tasks in different ways. Use the Strategy when you have a lot of similar classes that only differ in the way they execute some behavior
 
 -**Facade**
+
 It shields the clients from the complexities of the sub-system components. It promotes loose coupling between subsystems and its clients 
