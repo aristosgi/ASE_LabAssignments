@@ -30,12 +30,30 @@ example:
 
 Factory Method Pattern allows the sub-classes to choose the type of objects to create. It promotes the loose-coupling by eliminating the need to bind application-specific classes into the code
 
-Used on : '''MetricsExporterFactory''' , '''SourceCodeAnalyzerFactory'''
+Used on : ```MetricsExporterFactory``` , ```SourceCodeAnalyzerFactory```
+
+(+) Separation of concerns: The logic to instantiate classes is separated.
+(+) Flexibility: We can extend Product hierarchy without affecting clients.
+(-) GoF Abstract Factory only covers object creation
 
 -**Strategy**
 
 The Strategy pattern lets you indirectly alter the object's behavior at runtime by associating it with different sub-objects which can perform specific sub-tasks in different ways. Use the Strategy when you have a lot of similar classes that only differ in the way they execute some behavior
 
+Used on : ```SourceCodeAnalyzer```
+
+(+) Freedom to choose algorithms
+(+) Easier extensibility
+(+) Concrete objects, such as, ```CVSExporter``` and ```JSONExporter``` are now interchangeable
+
 -**Facade**
 
 It shields the clients from the complexities of the sub-system components. It promotes loose coupling between subsystems and its clients 
+
+Used on : ```SourceCodeAnalyzerFacade```
+
+((+) Provides a simple interface to a complex system.
++) De-couples the subsystem for clients and other
+subsystems, thereby promoting subsystem
+independence and portability.
+(+) Layers the subsystem.
