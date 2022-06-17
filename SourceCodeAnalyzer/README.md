@@ -32,9 +32,9 @@ Factory Method Pattern allows the sub-classes to choose the type of objects to c
 
 Used on : ```MetricsExporterFactory``` , ```SourceCodeAnalyzerFactory```
 
-(+) Separation of concerns: The logic to instantiate classes is separated.
-(+) Flexibility: We can extend Product hierarchy without affecting clients.
-(-) GoF Abstract Factory only covers object creation
+-(+) Separation of concerns: The logic to instantiate classes is separated.
+-(+) Flexibility: We can extend Product hierarchy without affecting clients.
+-(-) GoF Abstract Factory only covers object creation
 
 -**Strategy**
 
@@ -42,9 +42,9 @@ The Strategy pattern lets you indirectly alter the object's behavior at runtime 
 
 Used on : ```SourceCodeAnalyzer```
 
-(+) Freedom to choose algorithms
-(+) Easier extensibility
-(+) Concrete objects, such as, ```CVSExporter``` and ```JSONExporter``` are now interchangeable
+-(+) Freedom to choose algorithms
+-(+) Easier extensibility
+-(+) Concrete objects, such as, ```CVSExporter``` and ```JSONExporter``` are now interchangeable
 
 -**Facade**
 
@@ -52,6 +52,6 @@ It shields the clients from the complexities of the sub-system components. It pr
 
 Used on : ```SourceCodeAnalyzerFacade```
 
-(+) Provides a simple interface to a complex system.
-(+) De-couples the subsystem for clients and othersubsystems, thereby promoting subsystem independence and portability.
-(+) Layers the subsystem.
+-(+) Provides a simple interface to a complex system.
+-(+) De-couples the subsystem for clients and othersubsystems, thereby promoting subsystem independence and portability.
+-(+) Layers the subsystem.
