@@ -52,8 +52,6 @@ It shields the clients from the complexities of the sub-system components. It pr
 
 Used on : ```SourceCodeAnalyzerFacade```
 
-((+) Provides a simple interface to a complex system.
-+) De-couples the subsystem for clients and other
-subsystems, thereby promoting subsystem
-independence and portability.
+(+) Provides a simple interface to a complex system.
+(+) De-couples the subsystem for clients and othersubsystems, thereby promoting subsystem independence and portability.
 (+) Layers the subsystem.
