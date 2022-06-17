@@ -1,3 +1,11 @@
+# Refactored source code analyzer
+This is the refactored version of the Source Code Analyzer system. The following sections present the Class Diagram of the system and the design patterns used in order to satisfy specific design decisions and requirements.
+
+## Module design
+The following class diagram visualizes the refactored source code analyzer. 
+![](assignment.png)
+
+# Build and execute the project and
 1. Build the executable Java application with: 
 	mvn package jacoco:report
 
@@ -11,3 +19,5 @@ were args translate to:
 	arg4 = “OutputFileType” [csv|json]
 example: 
 	java –jar ./target/sourcecodeanalyzer-0.0.1-SNAPSHOT-jar-with-dependencies.jar ./src/test/resources/TestClass.java regex local metrics_results csv
+
+
