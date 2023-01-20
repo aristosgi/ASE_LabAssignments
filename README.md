@@ -1,7 +1,7 @@
 
 [![Build Status](https://app.travis-ci.com/aristosgi/lab_assignments.svg?token=MuRSqKwayNEsF35Wnjhn&branch=development)](https://app.travis-ci.com/aristosgi/lab_assignments)
 
-A repository to deliver the lab assignments of the Applied Software Engineering course.
+A collection of lab assignments for the Applied Software Engineering course that are provided in this repository.
 
 ## <a name="table-of-contents"></a>Table of contents
 * [seip2022_practical_assignments](#parent)
